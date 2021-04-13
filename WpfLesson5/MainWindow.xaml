@@ -1,0 +1,198 @@
+﻿<Window x:Class="WpfLesson5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfLesson5" xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Name="mywindow">
+    <!--<Grid>
+
+        --><!--<ListView Name="listView" FontSize="22">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Date" Width="180"></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding DayOfWeek}" Header="DayOfWeek" Width="180" ></GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Year}" Header="Year" Width="180" ></GridViewColumn>
+                </GridView>
+            </ListView.View>
+            <sys:DateTime>3/3/2014</sys:DateTime>
+            <sys:DateTime>10/10/2018</sys:DateTime>
+            <sys:DateTime>1/20/2021</sys:DateTime>
+        </ListView>-->
+
+        <!--<ListView Name="listView" FontSize="22">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Id}" ></GridViewColumn>
+                    <GridViewColumn Header="Author" Width="150" DisplayMemberBinding="{Binding Author}" ></GridViewColumn>
+                    <GridViewColumn Header="Title" Width="150" DisplayMemberBinding="{Binding Title}" ></GridViewColumn>
+                    <GridViewColumn Header="Genre" Width="150" DisplayMemberBinding="{Binding Genre}" ></GridViewColumn>
+                    <GridViewColumn Header="Publisher" Width="150" DisplayMemberBinding="{Binding Publisher}" ></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>-->
+        <!--<ListView ItemsSource="{Binding Books}" Name="listView" FontSize="22">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="50" DisplayMemberBinding="{Binding Id}" ></GridViewColumn>
+                    <GridViewColumn Header="Author" Width="150" DisplayMemberBinding="{Binding Author}" ></GridViewColumn>
+                    <GridViewColumn Header="Title" Width="150" DisplayMemberBinding="{Binding Title}" ></GridViewColumn>
+                    <GridViewColumn Header="Genre" Width="150" DisplayMemberBinding="{Binding Genre}" ></GridViewColumn>
+                    <GridViewColumn Header="Publisher" Width="150" DisplayMemberBinding="{Binding Publisher}" ></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>-->
+
+
+
+        <!--<Menu >
+            <MenuItem Header="File" FontSize="22" >
+                <MenuItem Header="New..." >
+                    <MenuItem.Icon>
+                        <Image Source="mario.jpg"/>
+                    </MenuItem.Icon>
+
+                </MenuItem>
+                <MenuItem Header="Open..." ></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Save..." ></MenuItem>
+                <MenuItem Header="Save As..." ></MenuItem>
+                <MenuItem Header="Help..." >
+                    <MenuItem Header="Help .. Help" ></MenuItem>
+                </MenuItem>
+            </MenuItem>
+        </Menu>-->
+
+        <!--<Button Content="Right Click Me" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            <Button.ContextMenu>
+                <ContextMenu>
+                    <MenuItem Header="Item 1" ></MenuItem>
+                    <MenuItem Header="Item 2" ></MenuItem>
+                    <MenuItem Header="Item 3" ></MenuItem>
+                </ContextMenu>
+            </Button.ContextMenu>
+        </Button>--><!--
+        
+        
+        
+        
+    </Grid>-->
+    <!--<Grid Background="Transparent">
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header = "Menu item 1"/>
+                <MenuItem Header = "Menu item 2"/>
+                <MenuItem Header = "Menu item 3"/>
+            </ContextMenu>
+        </Grid.ContextMenu>
+  
+    </Grid>-->
+
+    <!--<Grid>
+
+        --><!--<Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="6*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ToolBar>
+            <Image Width="50" Height="50" Source="mario.jpg" ></Image>
+            <Button Width="100" Height="50" Content="Hi Wpf" ></Button>
+            <TextBlock VerticalAlignment="Center">Hello</TextBlock>
+        </ToolBar>-->
+
+
+
+        <!--<TreeView FontSize="22">
+            <TreeViewItem Header="Desktop" >
+                <TreeViewItem>
+                    <TreeViewItem.Header>
+                        <StackPanel Orientation="Horizontal">
+                            <CheckBox></CheckBox>
+                            <Image Source="mario.jpg" Height="30"></Image>
+                            <TextBlock Text="User"></TextBlock>
+                        </StackPanel>
+                    </TreeViewItem.Header>
+                </TreeViewItem>
+                <TreeViewItem Header="Public" ></TreeViewItem>
+                <TreeViewItem Header="Computer" >
+                    <TreeViewItem  Header="Local Disc">
+                        
+                        <TreeViewItem Header="Program Files" ></TreeViewItem>
+                        <TreeViewItem Header="Users" ></TreeViewItem>
+                        <TreeViewItem Header="Windows" ></TreeViewItem>
+                    </TreeViewItem>
+                    <TreeViewItem  Header="DVD Drive"></TreeViewItem>
+                </TreeViewItem>
+            </TreeViewItem>
+           
+        </TreeView>--><!--
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        
+        <Border 
+            Grid.Row="1" 
+            BorderBrush="Black"
+            BorderThickness="3"
+            Margin="5"
+            CornerRadius="10"
+            >
+            <StackPanel Orientation="Horizontal" >
+                <TextBox 
+                    Width="650" 
+                    Margin="5"
+                    BorderThickness="0"
+                    FontSize="26"
+                ></TextBox>
+                <Button 
+                    Width="100" 
+                    Margin="10"
+                    BorderBrush="White"
+                    BorderThickness="1"
+                    Background="DeepSkyBlue"
+                    Content="Send"
+                    FontSize="20"
+                    >
+                    
+                </Button>
+            </StackPanel>
+        </Border>
+        
+        
+    </Grid>-->
+
+
+
+    <Grid>
+        <ListBox ItemsSource="{Binding Books}" Background="LightGoldenrodYellow" Name="listbox">
+            <!--<ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <VirtualizingStackPanel></VirtualizingStackPanel>
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>-->
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Grid Width="{Binding ElementName=listbox, Path=ActualWidth}">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="3*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Grid.Column="0" Height="100" Width="100" Source="{Binding ImagePath}" >
+                        </Image>
+                        <StackPanel Grid.Column="1" >
+                            <TextBlock  Width="150" Text="{Binding Title}" ></TextBlock>
+                            <TextBlock  Width="150" Text="{Binding Author}" ></TextBlock>
+                            <TextBlock  Width="150" Text="{Binding Pages}" ></TextBlock>
+                        </StackPanel>
+                        <Button Grid.Column="2" Margin="10" Padding="15" FontSize="20" >Buy</Button>
+                    </Grid>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+    </Grid>
+    
+</Window>
