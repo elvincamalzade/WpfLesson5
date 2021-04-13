@@ -166,13 +166,13 @@
 
 
 
-    <Grid>
+    <!--<Grid>
         <ListBox ItemsSource="{Binding Books}" Background="LightGoldenrodYellow" Name="listbox">
-            <!--<ListBox.ItemsPanel>
+            <ListBox.ItemsPanel>
                 <ItemsPanelTemplate>
-                    <VirtualizingStackPanel></VirtualizingStackPanel>
+                    <WrapPanel ></WrapPanel>
                 </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>-->
+            </ListBox.ItemsPanel>
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <Grid Width="{Binding ElementName=listbox, Path=ActualWidth}">
@@ -193,6 +193,8 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-    </Grid>
+    </Grid>-->
+   
+
     
 </Window>
